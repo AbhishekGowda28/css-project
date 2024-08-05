@@ -1,0 +1,20 @@
+{
+  "name": "css-project",
+  "version": "1.0.0",
+  "description": "Collection of CSS projects",
+  "author": "AbhishekGowda28",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CSS",
+    "CSS3"
+  ],
+  "devDependencies": {},
+  "license": "MIT"
+}
