@@ -1,0 +1,87 @@
+:root {
+  background-color: #e3e3e3;
+
+  --traffic-stop: #ed1c24;
+  --traffic-ready: #fbcc34;
+  --traffic-go: #009245;
+
+  --traffic-light-ring-width: 125px;
+  --traffic-light-ring-height: 125px;
+
+  --traffic-light-frame-height: 190px;
+  --traffic-light-frame-width: 190px;
+  --traffic-light-frame-color: #4d4d4d;
+
+  --traffic-light-link-height: 12px;
+  --traffic-light-link-color: #1a1a1a;
+
+  --traffic-light-top-rest-color: #999999;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin: 0px;
+}
+
+.red-light {
+  background-color: var(--traffic-stop);
+}
+
+.yellow-light {
+  background-color: var(--traffic-ready);
+}
+
+.green-light {
+  background-color: var(--traffic-go);
+}
+
+.traffic-light {
+  width: var(--traffic-light-ring-width);
+  height: var(--traffic-light-ring-height);
+  border-radius: 50%;
+}
+
+.traffic-light-outer {
+  width: var(--traffic-light-ring-width);
+  border: 14px solid #191919;
+  border-radius: 50%;
+}
+
+.traffic-light-frame {
+  width: var(--traffic-light-frame-width);
+  height: var(--traffic-light-frame-height);
+  border-radius: 32px;
+  background-color: var(--traffic-light-frame-color);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  width: var(--traffic-light-ring-width);
+  height: var(--traffic-light-link-height);
+  background-color: var(--traffic-light-link-color);
+  border-radius: var(--traffic-light-link-height);
+}
+
+.traffic-light-top-rest {
+  width: calc(var(--traffic-light-ring-width) * 0.55);
+  height: 20px;
+  background-color: var(--traffic-light-top-rest-color);
+}
+
+.traffic-light-pole-line {
+  width: 16px;
+  height: 28px;
+  background-color: var(--traffic-light-link-color);
+}
+
+.traffic-light-pole {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}

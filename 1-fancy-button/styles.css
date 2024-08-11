@@ -1,0 +1,35 @@
+:root {
+  --items-gap: 1rem;
+}
+
+.display-app {
+  display: flex;
+  flex-direction: column;
+  margin: auto 30%;
+  gap: var(--items-gap);
+  align-items: center;
+  justify-content: baseline;
+}
+
+.facebook-theme {
+  --facebook-theme-color: #d8dadf;
+  --facebook-theme-color-hover: #a9aaad;
+  --facebook-theme-button-width: 136px;
+  --facebook-theme-button-height: 40px;
+  --facebook-theme-button-radius: 8px;
+}
+
+.facebook-button {
+  background-color: var(--facebook-theme-color);
+  width: var(--facebook-theme-button-width);
+  height: var(--facebook-theme-button-height);
+  border: none;
+  border-radius: var(--facebook-theme-button-radius);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.facebook-button:active {
+  width: calc(var(--facebook-theme-button-width) - 2px);
+  background-color: var(--facebook-theme-color-hover);
+}

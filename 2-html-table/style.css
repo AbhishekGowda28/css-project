@@ -1,0 +1,20 @@
+:root {
+  --table-header-background-color: #ba68c8;
+}
+
+table {
+  display: table;
+  border: 1px solid var(--table-header-background-color);
+  border-bottom-color: transparent;
+  box-shadow: 2px -1px 1px var(--table-header-background-color);
+  outline: 1px solid var(--table-header-background-color);
+}
+
+thead {
+  text-transform: uppercase;
+  /* background-color: var(--table-header-background-color); */
+}
+
+td {
+  /* border: 1px solid; */
+}
